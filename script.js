@@ -1,10 +1,10 @@
-// Get saved data
+
 let students = JSON.parse(localStorage.getItem("students")) || [];
 let records = JSON.parse(localStorage.getItem("records")) || [];
 
 let attendance = {};
 
-// Add student
+
 function addStudent() {
     let name = document.getElementById("studentName").value.trim();
 
@@ -27,7 +27,7 @@ function addStudent() {
     displayStudents();
 }
 
-// Mark student present or absent
+
 function markPresent(id) {
     attendance[id] = "Present";
     displayStudents();
@@ -38,7 +38,7 @@ function markAbsent(id) {
     displayStudents();
 }
 
-// Calculate attendance percentage
+
 function calculateAttendance(id) {
     let totalDays = 0;
     let presentDays = 0;
@@ -60,7 +60,7 @@ function calculateAttendance(id) {
     return ((presentDays / totalDays) * 100).toFixed(2);
 }
 
-// Save attendance
+
 function saveAttendance() {
     let date = new Date().toLocaleDateString();
 
@@ -89,7 +89,7 @@ function saveAttendance() {
     alert("Attendance saved successfully");
 }
 
-// Display students
+
 function displayStudents() {
     let list = document.getElementById("studentList");
     list.innerHTML = "";
@@ -130,7 +130,7 @@ function displayStudents() {
     showHistory();
 }
 
-// Show previous records
+
 function showHistory() {
     let history = document.getElementById("history");
     history.innerHTML = "";
@@ -150,7 +150,7 @@ function showHistory() {
     }
 }
 
-// Load saved attendance
+
 let today = new Date().toLocaleDateString();
 let found = false;
 
