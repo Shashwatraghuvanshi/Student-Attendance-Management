@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <h1>Student Attendance Management System</h1>
+
+        <h3>Add Student</h3>
+        <input type="text" id="studentName" placeholder="Enter student name">
+        <button onclick="addStudent()">Add Student</button>
+
+        <h3>Attendance Details</h3>
+        <p>Total Students: <span id="total">0</span></p>
+        <p>Present: <span id="present">0</span></p>
+        <p>Absent: <span id="absent">0</span></p>
+
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Status</th>
+                <th>Attendance %</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="studentList"></tbody>
+        </table>
+
+        <br>
+        <button onclick="saveAttendance()">Save Attendance</button>
+
+        <h3>Attendance History</h3>
+        <div id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

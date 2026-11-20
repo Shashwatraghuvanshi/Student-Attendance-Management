@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 25px;
+    color: #263445;
+}
+
+.box {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #1e40af;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+h3 {
+    color: #334155;
+    margin-top: 25px;
+}
+
+input {
+    padding: 12px;
+    width: 55%;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    padding: 11px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* Attendance information */
+
+p {
+    background-color: #f1f5f9;
+    padding: 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 8px;
+    color: #334155;
+}
+
+/* Student table */
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #1e40af;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Attendance buttons */
+
+td button:first-child {
+    background-color: #16a34a;
+}
+
+td button:first-child:hover {
+    background-color: #15803d;
+}
+
+td button:nth-child(2) {
+    background-color: #dc2626;
+}
+
+td button:nth-child(2):hover {
+    background-color: #b91c1c;
+}
+
+/* Attendance history */
+
+#history {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#history p {
+    display: block;
+    background-color: white;
+    border-left: 4px solid #2563eb;
+    padding: 12px;
+}
+
+/* Mobile screen */
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 4px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
